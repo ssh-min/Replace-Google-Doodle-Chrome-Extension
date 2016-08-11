@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Replace Google Doodle",
+  "description": "Google's doodle becomes annoying after a point of time. By default this extension replaces doodle
+  with Google logo and also gives the flexibility of uploading their own pictures",
+  "version": "1.0",
+  "options_page":"options.html",
+
+"content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-3.1.0.min.js","content.js"]
+    }
+  ],
+"permissions": [
+    "tabs", "http://www.google.com/*"
+  ],
+"web_accessible_resources": [
+    "images/*.png",
+    "*.png",
+    "style/double-rainbow.css",
+    "script/double-rainbow.js",
+    "script/main.js",
+    "templates/*"
+  ]
+}
