@@ -6,19 +6,19 @@
  -->
 <html>
   <head>
-    <title>Options page</title>
-    <link rel="stylesheet" type="text/css" href="mycss.css">
+     <script src="jquery-3.1.0.min.js"></script>
+   <script src="popup.js"></script>
+    <title>Getting Started Extension's Popup</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
       }
-      #status {
-        /* avoid an excessively wide status text */
+        #status {
         white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+        /*text-overflow: ellipsis;*/
+        /*overflow: hidden;*/
+        max-width: 800px;
       }
     </style>
 
@@ -28,12 +28,10 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <!--<script src="popup.js"></script>-->
+
   </head>
   <body>
-    <div id="centercontent">
-      <input type="file" name="image browser" id="imgbrowse" >
-    </div>
+  <button name="test" id="browseimage">test </button>
+    <input type="file" >
   </body>
 </html>
-
