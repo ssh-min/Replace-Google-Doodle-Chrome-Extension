@@ -19,6 +19,7 @@
 "web_accessible_resources": [
     "images/*.png",
     "*.png",
+    "*.jpg",
     "style/double-rainbow.css",
     "script/double-rainbow.js",
     "script/main.js",
